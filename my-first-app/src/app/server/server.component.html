@@ -1,4 +1,11 @@
-<p>The Server with ID {{serverId}} is {{statusCode}} </p>
+<!-- <p>The Server with ID {{serverId}} is {{statusCode}} </p> -->
+ <label>Server Name</label>
+<!-- <input type="text" class="form-control" (input)="updateServerName($event)">
+<p>{{serverName}}</p>  -->
 
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add new server</button>
-<p></p>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<!-- <p>{{serverName}}</p> -->
+
+<button id="propertyCheck" class="btn btn-primary" [disabled]="!allowNewServer" (click)="changeServerCreationStatus($event)">Add new server</button>
+<p>{{serverCreationStatus}}</p>
+

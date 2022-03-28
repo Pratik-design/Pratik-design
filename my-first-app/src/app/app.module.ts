@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +8,7 @@ import { FormsModule} from '@angular/forms';
 import { ServerComponent } from './server/server.component';
 import { WarningAlertComponent } from './assignment/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './assignment/success-alert/success-alert.component';
+import { DataBindingExampleComponent } from './data-binding-assignment/data-binding-example/data-binding-example.component';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,11 @@ import { SuccessAlertComponent } from './assignment/success-alert/success-alert.
     ServerComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
+    DataBindingExampleComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
