@@ -1,0 +1,41 @@
+<!-- my solution -->
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="adjustment">
+            <button class="btn btn-primary" (click)="displayPara()">Display Details</button>
+            <button class="btn btn-primary" (click)="clearCount()">Clear Items</button>
+            </div>
+
+            <p *ngIf="togglePara">
+                This is the sample para used for implementing ngIf directive.
+            </p>
+
+            <p *ngFor="let item of clickedArray" [ngClass]="{tryColor: item <=4, firmColor : item > 4 }">You have clicked {{item + 1}} times.</p>
+
+        </div>
+    </div>
+</div> -->
+
+<!-- instructor's solution -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="adjustment">
+            <!-- <button class="btn btn-primary" (click)="togglePara = !togglePara">Display Details</button> -->
+            <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+            </div>
+
+            <p *ngIf="togglePara">
+                This is the sample para used for implementing ngIf directive.
+            </p>
+
+            <div *ngFor="let item of log" 
+            [ngStyle]="{backgroundColor : item >= 5 ? 'blue' : 'transparent'}"
+            [ngClass]="{'white-text': item >= 5}"
+            >{{item}}</div>
+
+        </div>
+    </div>
+</div>

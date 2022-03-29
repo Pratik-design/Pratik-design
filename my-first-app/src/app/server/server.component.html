@@ -7,5 +7,8 @@
 <!-- <p>{{serverName}}</p> -->
 
 <button id="propertyCheck" class="btn btn-primary" [disabled]="!allowNewServer" (click)="changeServerCreationStatus($event)">Add new server</button>
-<p>{{serverCreationStatus}}</p>
+<p *ngIf="serverCreated">{{serverCreationStatus}}</p>
+
+
+
 

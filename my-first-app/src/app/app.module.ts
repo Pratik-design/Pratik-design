@@ -9,6 +9,7 @@ import { ServerComponent } from './server/server.component';
 import { WarningAlertComponent } from './assignment/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './assignment/success-alert/success-alert.component';
 import { DataBindingExampleComponent } from './data-binding-assignment/data-binding-example/data-binding-example.component';
+import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment/directive-assignment.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DataBindingExampleComponent } from './data-binding-assignment/data-bind
     WarningAlertComponent,
     SuccessAlertComponent,
     DataBindingExampleComponent,
+    DirectiveAssignmentComponent,
   ],
   imports: [
     BrowserModule,

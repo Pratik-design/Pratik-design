@@ -11,6 +11,7 @@ export class ServerComponent implements OnInit {
   serverId = 10;
   statusCode = 'offline';
   serverName = 'Test Server';
+  serverCreated = false;
 
   constructor() { 
     setTimeout(() => {
@@ -25,6 +26,7 @@ export class ServerComponent implements OnInit {
 
   changeServerCreationStatus(event:any){
     //console.log("we are in method", event);
+    this.serverCreated = true;
     this.serverCreationStatus = "Server was created with name "+ this.serverName;
   }
 
