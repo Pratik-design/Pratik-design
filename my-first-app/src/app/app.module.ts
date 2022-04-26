@@ -14,6 +14,8 @@ import { DataBindingFinalComponent } from './assignment/data-binding-final/data-
 import { GameControlComponent } from './assignment/data-binding-final/game-control/game-control.component';
 import { OddComponent } from './assignment/data-binding-final/odd/odd.component';
 import { EvenComponent } from './assignment/data-binding-final/even/even.component';
+import { HighlightDirective } from './highlight.directive';
+import { BetterHighlightDirective } from './better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { EvenComponent } from './assignment/data-binding-final/even/even.compone
     GameControlComponent,
     OddComponent,
     EvenComponent,
+    HighlightDirective,
+    BetterHighlightDirective,
   ],
   imports: [
     BrowserModule,
