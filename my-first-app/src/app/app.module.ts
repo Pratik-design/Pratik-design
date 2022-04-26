@@ -10,6 +10,10 @@ import { WarningAlertComponent } from './assignment/warning-alert/warning-alert.
 import { SuccessAlertComponent } from './assignment/success-alert/success-alert.component';
 import { DataBindingExampleComponent } from './data-binding-assignment/data-binding-example/data-binding-example.component';
 import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment/directive-assignment.component';
+import { DataBindingFinalComponent } from './assignment/data-binding-final/data-binding-final.component';
+import { GameControlComponent } from './assignment/data-binding-final/game-control/game-control.component';
+import { OddComponent } from './assignment/data-binding-final/odd/odd.component';
+import { EvenComponent } from './assignment/data-binding-final/even/even.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { DirectiveAssignmentComponent } from './directive-assignment/directive-a
     SuccessAlertComponent,
     DataBindingExampleComponent,
     DirectiveAssignmentComponent,
+    DataBindingFinalComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
   ],
   imports: [
     BrowserModule,

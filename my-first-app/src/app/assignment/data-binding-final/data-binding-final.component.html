@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row" style="padding-top: 25px;">
+        <app-game-control (incrementedValue)="getCount($event)"></app-game-control>
+    </div>
+
+    <ng-container *ngIf="!isZero">
+        <div class="row">
+            <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+        </div>
+
+
+
+        <div class="row">
+            <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+        </div>
+    </ng-container>
+
+</div>
