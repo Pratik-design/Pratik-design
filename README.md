@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Pratik-design
+- 👋 Hi, I’m @Pratik6
 - 👀 I’m interested in developing responsive web applications
 - 🌱 I’m currently learning Angular
 - 💞️ I’m looking to collaborate on various development projects
